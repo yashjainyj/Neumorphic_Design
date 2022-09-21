@@ -65,7 +65,9 @@
 
 <div class="components m-5">
   <h2 class="engrave" style="text-align: center;" >User Details</h2>
-
+  <div class="center" style="text-align: center;" *ngIf="userDetails.length==0">
+    <h1 class="engrave">No User Found ! <br> Please Add a User Detail</h1>
+  </div>
   <div class="row mt-3">
     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-4" *ngFor="let item of userDetails;let i=index">
       <div class="detailCard "  [ngClass]="item?.active ? 'active' : ''" id="detailCard">
