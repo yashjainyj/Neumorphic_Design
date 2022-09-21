@@ -86,7 +86,7 @@
             </div>
           </div>
           <div>
-            <h4 class="emboss">{{item?.name}}</h4>
+            <h4 class="emboss">{{item?.name|titlecase}}</h4>
             <h6 class="emboss"> <a target="_blank" href="mailto:{{item?.email}}">{{item?.email}}</a> </h6>
           </div>
           <div (click)="deleteDetails(i)" style="width: 100%;text-align: end;cursor: pointer;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="red" class="bi bi-x" viewBox="0 0 16 16">
