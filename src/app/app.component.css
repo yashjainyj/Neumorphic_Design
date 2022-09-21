@@ -1,0 +1,168 @@
+
+.main {
+    font-family: 'Poppins', sans-serif;
+    background: var(--greyLight-1);
+  }
+.components {
+    border-radius: 3rem;
+    box-shadow:.8rem .8rem 1.4rem var(--greyLight-2), 
+              -.2rem -.2rem 1.8rem var(--white);
+    padding: 2rem;
+   }
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2,h4,h5 {
+	font-weight: 600;
+	/* font-size: 2rem; */
+	margin: 0;
+}
+.lableHeading{
+    margin: 0;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+.emboss {
+	background: var(--white);
+	background-clip: text;
+	color: transparent;
+	text-shadow: rgba(0, 0, 0, 0.50) 2px 1px 1px;
+}
+.engrave {
+    background:var(--greyDark);
+    background-clip: text;
+    color: transparent;
+    text-shadow:#ffffff7e 1px 2px 1px;
+}
+
+.textfield {
+    width: 100%;
+}
+
+.textfield div {
+    box-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyLight-2),
+    inset -0.2rem -0.2rem 0.5rem var(--greyLight-3);
+    background: var(--greyLight-1);
+    box-shadow:  inset 0.2rem 0.2rem 0.5rem var(--greyLight-3),
+    inset -0.2rem -0.2rem 0.5rem var(--white), 0.3rem 0.3rem 0.5rem var(--greyLight-3),
+    -0.2rem -0.2rem 0.4rem var(--white);;
+    border: none;
+    border-radius: 1.2rem;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    width: 100%;
+}
+
+.textfield div input {
+    background: transparent;
+    border: none;
+    color: var(--greyDark);
+    flex: 1;
+}
+
+.textfield div input::placeholder {
+    color: var(--greyLight-2);
+}
+.textfield div input:focus {
+    outline: none;
+}
+.textfield div:focus-within {
+    box-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyLight-1),
+    inset -0.2rem -0.2rem 0.5rem var(--greyLight-2), 0.3rem 0.3rem 0.5rem var(--greyLight-2),
+    -0.2rem -0.2rem 0.4rem var(--white);
+}
+
+
+.button {
+    cursor: pointer;
+    border: none;
+    border-radius: 1.2rem;
+    padding: 1rem 3rem;
+    transition: all 260ms ease;
+    text-decoration: none;
+    font-family: inherit;
+    max-width: 100%;
+    color: var(--greyDark);
+    background: var(--greyLight-1);
+    box-shadow:  0.3rem 0.3rem 0.5rem var(--greyLight-2),
+    -0.2rem -0.2rem 0.4rem var(--white);
+}
+.button:hover, .button:focus {
+    color: var(--primary) !important;
+    outline: none;
+}
+.button:active {
+    box-shadow:inset 0.2rem 0.2rem 0.5rem var(--greyLight-1),
+    inset -0.2rem -0.2rem 0.5rem var(--greyLight-2);
+}
+.button--raised {
+    box-shadow:  inset 0.2rem 0.2rem 0.5rem var(--greyLight-1),
+    inset -0.2rem -0.2rem 0.5rem var(--greyLight-2), 0.3rem 0.3rem 0.5rem var(--greyLight-2),
+    -0.2rem -0.2rem 0.4rem var(--white);;
+}
+.button--pin {
+    border-radius: 50%;
+    min-height: 2rem;
+    min-width: 2rem;
+    max-height: 2rem;
+    max-width: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+
+.detailCard{
+    padding: 1rem 1.5rem;
+    border-radius: 1.2rem;
+    background: var(--greyLight-1);
+    cursor: default;
+    user-select: none;
+    height: 120px;
+    max-width: 100%;
+    box-shadow:  inset 0.2rem 0.2rem 0.5rem var(--greyLight-3),
+    inset -0.2rem -0.2rem 0.5rem var(--white), 0.3rem 0.3rem 0.5rem var(--greyLight-3),
+    -0.2rem -0.2rem 0.4rem var(--white);;
+}
+.active{
+    height: 170px;
+}
+.svg{
+    width: 50px;
+    height: 50px;
+    
+    transition: ease-in-out 1s ;
+}
+.active .svg{
+    width: 30px;
+    height: 30px;
+    
+    padding: 2px;
+
+}
+.svgemail{
+    width: 24px;
+    height: 24px;
+    padding: 1px;
+    transition: ease-in-out 2s ;
+    opacity: 0;
+    position: absolute;
+
+    display: none;
+}
+
+.active .svgemail{
+    opacity: 1;
+    display: block;
+    position: relative;
+}
+a{
+    text-decoration: none;
+    color: transparent;
+}
